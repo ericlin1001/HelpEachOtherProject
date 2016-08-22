@@ -1,0 +1,22 @@
+ 1
+ chown -R sysu:sysu heo_test
+ chown -R sysu:apache Lib
+ chown -R sysu:apache Tpl
+ chown -R apache:apache Runtime
+ 
+ 2
+ modify index.php
+ modify '__ROOT__','/heo_test' to your website path of this directory
+ 
+ 3
+ modify Config/config.php
+
+ 4
+ this website use mysql,databases and tables used in this website you can depend on heo_thinkphp.sql
+
+ 5
+ There must be a account whose uid is -1 to make the system available!!!:
+ insert into think_user_info value(-1,'system','0','0','0',0,'0','0');
+
+ 6
+ elf.py is the system manager,you should keep it run in the back ground.

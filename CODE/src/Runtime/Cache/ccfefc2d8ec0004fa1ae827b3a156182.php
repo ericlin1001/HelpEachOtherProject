@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit(); if ("NewPose" == "NewPose") echo 'a'; else echo 'b'; ?>
